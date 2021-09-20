@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee;http://java.sun.com/xml/ns/j2ee/web-app_2_5.xsd" id="WebApp_ID" version="4.0">
+  <display-name>flyaway</display-name>
+    <servlet>
+        <servlet-name>adminLogin</servlet-name>
+        <servlet-class>servlets.Login</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>adminLogin</servlet-name>
+        <url-pattern>/Login</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>userLogin</servlet-name>
+        <servlet-class>servlets.userLogin</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>userLogin</servlet-name>
+        <url-pattern>/userLogin</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>search</servlet-name>
+        <servlet-class>servlets.searchPortal</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>search</servlet-name>
+        <url-pattern>/search</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>signup</servlet-name>
+        <servlet-class>servlets.signup</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>signup</servlet-name>
+        <url-pattern>/signup</url-pattern>
+    </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>changepassword</servlet-name>
+        <servlet-class>servlets.changepassword</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>changepassword</servlet-name>
+        <url-pattern>/changepassword</url-pattern>
+    </servlet-mapping>
+    
+     <servlet>
+        <servlet-name>addflights</servlet-name>
+        <servlet-class>servlets.addflights</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>addflights</servlet-name>
+        <url-pattern>/addflights</url-pattern>
+    </servlet-mapping>
+</web-app>
